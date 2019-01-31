@@ -1,0 +1,22 @@
+Attributes:
+  path:
+    Type: S
+    Description: |
+      A description of an attribute.
+  created:
+    Type: N
+    Description: |
+      A description of an attribute.
+  modified:
+    Type: N
+    Description: |
+      A description of an attribute.
+
+Tables:
+  - TableName: dynaops.Test
+    PartitionKey: path
+    SortKey: created
+    LocalSecondaryIndexes:
+      - IndexName: Modified
+        SortKey: modified
+        Projection: ['title', 'created']

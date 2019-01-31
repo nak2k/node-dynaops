@@ -1,0 +1,42 @@
+{
+  "name": "dynaops",
+  "version": "0.1.0",
+  "description": "CLI for DynamoDB ops",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "bin": {
+    "dynaops": "bin/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/nak2k/node-dynaops/issues"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.404.0",
+    "chalk": "^2.4.2",
+    "dynaops-core": "^0.1.0",
+    "yaml": "^1.3.2",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "tape": "^4.9.2"
+  },
+  "homepage": "https://github.com/nak2k/node-dynaops",
+  "keywords": [
+    "aws",
+    "dynamodb"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nak2k/node-dynaops.git"
+  },
+  "scripts": {
+    "prepublishOnly": "npm test",
+    "test": "tape test/*.js"
+  },
+  "files": [
+    "README.md",
+    "bin/",
+    "lib/"
+  ]
+}
